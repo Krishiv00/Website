@@ -472,36 +472,6 @@ code {
     flex-wrap: wrap;
 }
 
-.scroll-hint {
-    position: absolute;
-    bottom: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 11px;
-    color: var(--text-dimmer);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    letter-spacing: 0.1em;
-}
-
-.scroll-arrow {
-    animation: bounce 2s ease infinite;
-    display: block;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0px);
-        opacity: 0.5;
-    }
-    50% {
-        transform: translateY(5px);
-        opacity: 1;
-    }
-}
-
 .featured-section {
     padding: var(--section-pad) 40px;
     background: var(--bg-2);

@@ -192,7 +192,6 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-hint">scroll<span class="scroll-arrow">↓</span></div>
     </section>
 
     <!-- Elvin Featured -->
@@ -209,6 +208,7 @@
                     <span class="tag">CSS</span>
                     <span class="tag">JavaScript</span>
                     <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
                 </div>
             </div>
             <div class="featured-body">
@@ -228,34 +228,29 @@
                         staggered reveals, a share widget, and a comment form. Zero configuration required.
                     </p>
                     <p>
-                        The standout feature is <code>new-post.py</code> - a Python CLI script any
-                        author can run to go from zero to a fully wired, SEO-ready post scaffold
-                        in seconds. It prompts for title, slug, excerpt, topics, and author, then
-                        generates the post page and a copy-paste snippet for the data registry.
-                        No boilerplate to touch. No structure to figure out. Just open the file and write.
+                        Writing for the site happens through a companion tool I built alongside it - a
+                        local Flask app with a block-based editor and a live, styled preview, running
+                        either in the browser or as its own native desktop window. The whole thing writes
+                        clean, SEO-ready post HTML straight into the site's
+                        file structure - no templates to fight, no boilerplate to copy by hand.
                     </p>
                     <a href="https://elvinnn.com" target="_blank" rel="noopener noreferrer" class="featured-link">Visit the site →</a>
                 </div>
                 <div class="featured-code-block">
                     <div class="code-header">
                         <span class="code-lang">bash</span>
-                        <span class="code-caption">Creating a new post in seconds</span>
+                        <span class="code-caption">Starting the post editor</span>
                     </div>
-<pre><code class="language-bash">$ python scripts/new-post.py
+<pre><code class="language-bash">$ cd scripts/editor
+$ python main.py
 
-Title       : Backpropagation Explained
-Slug        : backpropagation-explained
-Excerpt     : How neural networks actually learn from their mistakes.
-Topics      : technology
-Author      : krishiv-goel
-Date        : 2026-01-15
-Code Blocks : y
+ * Serving Flask app 'app'
+ * Post Editor running at http://127.0.0.1:5151
+ * Opening desktop window…
 
-✓  posts/backpropagation-explained/index.html
-✓  post-entry.txt    →  paste into .data/posts.js
-
-Place your cover image at:
-  posts/backpropagation-explained/images/cover.webp</code></pre>
+✓  Live preview connected
+✓  Reading posts/ and .data/posts.js
+✓  Ready to write</code></pre>
                 </div>
             </div>
         </div>
